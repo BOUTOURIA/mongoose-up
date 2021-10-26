@@ -1,6 +1,7 @@
 //create server
 const express=require('express')
 const app =express()
+
 const connectDB=require('./config/connectDB')
 connectDB()
 const port = process.env.PORT || 6000;
@@ -19,7 +20,7 @@ const PERSON=require('./Models/Person')
  })
  person.save((err,res)=>{
     try {
-         console.log(res);
+         console.log(data);
      } catch (err) {
          console.log(err);
      }

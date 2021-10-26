@@ -2,7 +2,7 @@ const mongoose=require('mongoose')
 const schema=mongoose.Schema;
 
 // define person schema
-const personSchema = new mongoose.Schema({
+const personSchema = new schema({
     name: {
       type: String,
       require: true,
@@ -12,4 +12,4 @@ const personSchema = new mongoose.Schema({
   });
   
   // create person model
-  module.exports=Person= mongoose.model("Person", personSchema);
+  module.exports=Person= mongoose.model('Person', personSchema);
